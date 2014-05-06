@@ -195,6 +195,14 @@ a:hover {
         font-size: 15px;
     }
 
+
+/* sprite */
+.main-navigation .show-navigation,
+.slider-control .btn-left,
+.slider-control .btn-right {
+    background-image: url(../img/sprite.png);
+}
+
 /* ==========================================================================
    Layout
    ========================================================================== */
@@ -288,7 +296,7 @@ a:hover {
         top: 40px;
         right:40px;
         margin:80px 60px 0 0;
-        background: url(../img/navigation-icon.png);
+        background-position: 0px -50px;
         width: 34px;
         height: 29px;
         transition: 0.4s all ease-in-out;
@@ -444,13 +452,13 @@ a:hover {
 
 
     .slider-control .btn-right {
+        background-position: 0px -25px;
         margin-left: 40px;
-        background-image: url(../img/arr-right.png);
     }
 
     .slider-control .btn-left {
+        background-position: 0px 0px;
         margin-right: 40px;
-        background-image: url(../img/arr-left.png);
     }
 
 #architecture .content-thin .extra-large {
@@ -556,9 +564,18 @@ a:hover {
         bottom:auto;
         margin-top: 20px;
     }
-    
+
     #architecture .content-thin p.paragraph-to-title {
         padding-left: 0;
+        width: 100%;
+    }
+
+    #architecture .content-thin .extra-large {
+        text-align: center;
+    }
+
+    .extra-large {
+        font-size: 36px;
     }
 }
 
@@ -581,9 +598,6 @@ a:hover {
         display: inherit;
     }
 
-    .extra-large {
-        font-size: 36px;
-    }
 
     .main-navigation {
         top: 10px;
