@@ -1,5 +1,33 @@
+/*
+    Template Name: Nana Hernandez Architector HTML Template
+    Author: Sergey Sokhatskiy
+    Author URI: http://vk.com/serg.sokhatsky
+    Description: HTML page constructed for UAWC 2014 (Junior Front-End)
+    Version: 0.1.0
+*
+
+//* Table of Content
+==================================================
+    #General
+        - Import Fonts
+        - Typographyx
+    #Content elements
+    #Layout
+    #Main Navigation
+    #Content Sections
+        - Biography
+        - architecture
+        - Media projects
+        - Partners
+        - Contacts
+    #Media Queries
+        - Portrait tablet to landscape and desktop
+        - Landscape phone to portrait tablet
+    #Helper classes
+*/
+
 /* ==========================================================================
-   Base
+   General
    ========================================================================== */
 
 body {
