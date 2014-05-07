@@ -378,6 +378,11 @@ a:hover {
                 color: #fff;
             }
 
+
+.link-email {
+    position: relative;
+    z-index: 6;
+}
 /* ==========================================================================
    Section biography
    ========================================================================== */
@@ -630,13 +635,13 @@ a:hover {
     .main-navigation {
         top: 10px;
         right:10px;
-        padding:40px 20px 0 0;
+        padding:50px 20px 0 0;
     }
 
         .main-navigation .show-navigation {
             top: 10px;
             right:10px;
-            margin:40px 20px 0 0;
+            margin:50px 20px 0 0;
         }
 }
 
