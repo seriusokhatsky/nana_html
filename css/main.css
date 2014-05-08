@@ -297,16 +297,19 @@ a:hover {
    Content Sections and Navigation
    ========================================================================== */
 
-.main-navigation {
+.main-navigation-wrap {
     position: fixed;
     z-index: 5;
     top: 40px;
     right:40px;
-    padding:80px 60px 0 0;
-    transition: 0.4s all ease-in-out;
-    -moz-transition: 0.4s all ease-in-out;
-    -webkit-transition: 0.4s all ease-in-out;
 }
+
+	.main-navigation {
+	    transition: 0.4s all ease-in-out;
+	    -moz-transition: 0.4s all ease-in-out;
+	    -webkit-transition: 0.4s all ease-in-out;
+	    padding:80px 60px 0 0;
+	}
     .main-navigation.collapsed {
         padding: 0;
         height: 0;

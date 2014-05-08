@@ -88,6 +88,22 @@ var cbpFixedScrollLayout = (function() {
     };
 
     function init() {
+    	
+    	$(window).resize(function() {
+	    	var viewPortWidth = $(window).width();
+	    	var contentWidth = $('.site-wrapper').width();
+	    	var rightSpace = (viewPortWidth - contentWidth) / 2;
+	    	if(rightSpace > 40) { // fit main navigation in the site content
+		    	$('.main-navigation-wrap').animate({'right': 40 + rightSpace}, 1);
+	    	} else {
+		    	$('.main-navigation-wrap').attr('style', '');
+	    	}
+	    	
+    	});
+    	
+    	$(window).resize();
+    	
+    	
         if($(window).width() < 767) {
             config.$nav.addClass('collapsed');
         }
