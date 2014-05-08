@@ -23,10 +23,7 @@ $.fn.projectSlider = function ( options ) {
                     } else {
                         index = imagesList.length-1; // if the first item set it to last
                     }
-                    slider.find('img').fadeOut(100, function() {
-                        slider.find('img').attr('src', imagesList[index]);// change image src
-                        slider.find('img').fadeIn(100);
-                    });
+                    slider.find('img').attr('src', imagesList[index]);// change image src
 
                     slider.find('.current-index').text(index + 1); // update slider counter
                 });
@@ -39,10 +36,7 @@ $.fn.projectSlider = function ( options ) {
                         index = 0; // if the last image set it to first
                     }
 
-                    slider.find('img').fadeOut(100, function() {
-                        slider.find('img').attr('src', imagesList[index]);// change image src
-                        slider.find('img').fadeIn(100);
-                    });
+                    slider.find('img').attr('src', imagesList[index]);// change image src
 
                     slider.find('.current-index').text(index + 1);// update slider counter
                 });
